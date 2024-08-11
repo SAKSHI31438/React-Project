@@ -14,7 +14,7 @@ const Home =()=>{
 
  const getproductcategory =async ()=>{
   try{
-   const {data}= await axios.get(`./React-project/products/category/${category}`);
+   const {data}= await axios.get(`/products/category/${category}`);
    setfilterproducts(data);
   }catch(err){
     console.log(err);
